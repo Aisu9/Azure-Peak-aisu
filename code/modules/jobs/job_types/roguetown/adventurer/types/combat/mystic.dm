@@ -15,14 +15,14 @@
 	)
 	subclass_spellpoints = 6
 	subclass_skills = list(
-		/datum/skill/misc/climbing = SKILL_EXP_APPRENTICE,
-		/datum/skill/misc/athletics = SKILL_EXP_APPRENTICE,
-		/datum/skill/misc/reading = SKILL_EXP_JOURNEYMAN,
-		/datum/skill/craft/alchemy = SKILL_EXP_NOVICE,
-		/datum/skill/misc/medicine = SKILL_EXP_NOVICE,
-		/datum/skill/magic/arcane = SKILL_EXP_APPRENTICE,
-		/datum/skill/magic/holy = SKILL_EXP_APPRENTICE,
-		/datum/skill/misc/swimming = SKILL_EXP_NOVICE,
+		/datum/skill/misc/climbing = SKILL_LEVEL_APPRENTICE,
+		/datum/skill/misc/athletics = SKILL_LEVEL_APPRENTICE,
+		/datum/skill/misc/reading = SKILL_LEVEL_JOURNEYMAN,
+		/datum/skill/craft/alchemy = SKILL_LEVEL_NOVICE,
+		/datum/skill/misc/medicine = SKILL_LEVEL_NOVICE,
+		/datum/skill/magic/arcane = SKILL_LEVEL_APPRENTICE,
+		/datum/skill/magic/holy = SKILL_LEVEL_APPRENTICE,
+		/datum/skill/misc/swimming = SKILL_LEVEL_NOVICE,
 	)
 	var/datum/devotion/C = new /datum/devotion(H, H.patron)
 	C.grant_miracles(H, cleric_tier = CLERIC_T1, passive_gain = CLERIC_REGEN_MINOR, devotion_limit = CLERIC_REQ_1)
