@@ -231,7 +231,7 @@
 			STATKEY_CON = 1,
 			STATKEY_WIL = 2,
 	)
-	age_mod = /datum/class_age_mod/mystic
+	age_mod = /datum/class_age_mod/adv_mage/mystic
 	subclass_spellpoints = 6
 	subclass_skills = list(
 		/datum/skill/misc/climbing = SKILL_LEVEL_APPRENTICE,
