@@ -25,6 +25,9 @@
 		/datum/skill/misc/swimming = SKILL_LEVEL_NOVICE,
 	)
 
+/datum/outfit/job/roguetown/mystic
+	name = "Mystic"
+
 /datum/outfit/job/roguetown/mystic/pre_equip(mob/living/carbon/human/H)
 	..()
 	to_chat(H, span_warning("I have spent my youth deepening my faith, only to be lured by the way of the magi, to the great regret of my family"))
