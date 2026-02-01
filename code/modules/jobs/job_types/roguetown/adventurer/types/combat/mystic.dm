@@ -72,7 +72,7 @@
 					H.adjust_skillrank_up_to(/datum/skill/combat/shields, SKILL_LEVEL_APPRENTICE, TRUE)
 					H.adjust_skillrank_up_to(/datum/skill/combat/swords, SKILL_LEVEL_JOURNEYMAN, TRUE)
 					H.mind.AddSpell(new /obj/effect/proc_holder/spell/invoked/enchant_weapon)
-					H.mind.AddSpell(new /obj/effect/proc_holder/spell/invoked/airblade)
+					H.mind.AddSpell(new /obj/effect/proc_holder/spell/invoked/projectile/airblade)
 					H.mind?.adjust_spellpoints(-5)
 					subclass_stats = list(
 						STATKEY_STR = 1,
@@ -82,7 +82,7 @@
 				if("Sorcerer Trainee")
 					backr = /obj/item/rogueweapon/woodstaff
 					H.adjust_skillrank_up_to(/datum/skill/combat/staves, SKILL_LEVEL_JOURNEYMAN, TRUE)
-					H.mind.AddSpell(new /obj/effect/proc_holder/spell/invoked/arcynebolt)
+					H.mind.AddSpell(new /obj/effect/proc_holder/spell/invoked/projectile/arcynebolt)
 					H.mind.AddSpell(new /obj/effect/proc_holder/spell/invoked/repulse)
 					backpack_contents = list(
 						/obj/item/roguegem/amethyst = 1,
