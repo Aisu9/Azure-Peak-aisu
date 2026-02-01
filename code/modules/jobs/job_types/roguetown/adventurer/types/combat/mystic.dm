@@ -48,7 +48,7 @@
 						/obj/item/roguegem/amethyst = 1,
 					)
 					subclass_stats = list(
-						STATKEY_LUC = 1
+						STATKEY_LUC = 1,
 					)
 					var/datum/devotion/C = new /datum/devotion(H, H.patron)
 					C.grant_miracles(H, cleric_tier = CLERIC_T1, passive_gain = CLERIC_REGEN_MINOR, devotion_limit = CLERIC_REQ_1)
@@ -62,7 +62,7 @@
 					)
 					H.mind?.adjust_spellpoints(-4)
 					subclass_stats = list(
-						STATKEY_CON = 1
+						STATKEY_CON = 1,
 					)
 					var/datum/devotion/C = new /datum/devotion(H, H.patron)
 					C.grant_miracles(H, cleric_tier = CLERIC_T1, passive_gain = CLERIC_REGEN_DEVOTEE, devotion_limit = CLERIC_REQ_1)
@@ -75,7 +75,7 @@
 					H.mind.AddSpell(new /obj/effect/proc_holder/spell/invoked/airblade)
 					H.mind?.adjust_spellpoints(-5)
 					subclass_stats = list(
-						STATKEY_STR = 1
+						STATKEY_STR = 1,
 					)
 					var/datum/devotion/C = new /datum/devotion(H, H.patron)
 					C.grant_miracles(H, cleric_tier = CLERIC_T1, passive_gain = CLERIC_REGEN_WITCH, devotion_limit = CLERIC_REQ_1)
@@ -89,7 +89,7 @@
 					)
 					H.mind?.adjust_spellpoints(-5) //so they can pick conjure companion
 					subclass_stats = list(
-						STATKEY_INT = 1
+						STATKEY_INT = 1,
 					)
 					var/datum/devotion/C = new /datum/devotion(H, H.patron)
 					C.grant_miracles(H, cleric_tier = CLERIC_T1, passive_gain = CLERIC_REGEN_WITCH, devotion_limit = CLERIC_REQ_1)
