@@ -230,8 +230,9 @@
 		/datum/skill/magic/arcane = SKILL_LEVEL_JOURNEYMAN
 	)
 	stat_mods = list(
-		STATKEY_INT = 1
-		STATKEY_SPD = -1
+		STATKEY_INT = 1,
+		STATKEY_SPD = -1,
+	)
 	sp_mod = 2
 
 /datum/class_age_mod/exorcist
