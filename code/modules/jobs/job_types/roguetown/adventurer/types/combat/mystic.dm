@@ -8,7 +8,6 @@
 	category_tags = list(CTAG_ADVENTURER, CTAG_COURTAGENT)
 	traits_applied = list(TRAIT_MAGEARMOR, TRAIT_SEEDKNOW, TRAIT_ARCYNE_T1)
 	subclass_stats = list(
-			STATKEY_PER = 1,
 			STATKEY_INT = 1,
 			STATKEY_CON = 1,
 			STATKEY_WIL = 2,
