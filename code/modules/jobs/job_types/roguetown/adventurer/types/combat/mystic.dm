@@ -54,7 +54,7 @@
 				C.grant_miracles(H, cleric_tier = CLERIC_T1, passive_gain = CLERIC_REGEN_MINOR, devotion_limit = CLERIC_REQ_1)
 			if("Resilient Soul")
 				backr = /obj/item/rogueweapon/woodstaff
-				H.adjust_skillrank_up_to(/datum/skill/combat/staves, SKILL_LEVEL_JOURNEYMAN, TRUE)
+				H.adjust_skillrank_up_to(/datum/skill/combat/staves, SKILL_LEVEL_APPRENTICE, TRUE)
 				H.mind.AddSpell(new /obj/effect/proc_holder/spell/invoked/stoneskin)
 				H.mind.AddSpell(new /obj/effect/proc_holder/spell/invoked/fortitude)
 				backpack_contents = list(
@@ -69,8 +69,8 @@
 			if("Spellblade Trainee")
 				backr = /obj/item/rogueweapon/shield/wood
 				beltr = /obj/item/rogueweapon/sword/iron
-				H.adjust_skillrank_up_to(/datum/skill/combat/shields, SKILL_LEVEL_APPRENTICE, TRUE)
-				H.adjust_skillrank_up_to(/datum/skill/combat/swords, SKILL_LEVEL_JOURNEYMAN, TRUE)
+				H.adjust_skillrank_up_to(/datum/skill/combat/shields, SKILL_LEVEL_NOVICE, TRUE)
+				H.adjust_skillrank_up_to(/datum/skill/combat/swords, SKILL_LEVEL_APPRENTICE, TRUE)
 				H.mind.AddSpell(new /obj/effect/proc_holder/spell/invoked/enchant_weapon)
 				H.mind.AddSpell(new /obj/effect/proc_holder/spell/invoked/projectile/airblade)
 				backpack_contents = list(
@@ -83,7 +83,7 @@
 				C.grant_miracles(H, cleric_tier = CLERIC_T1, passive_gain = CLERIC_REGEN_WITCH, devotion_limit = CLERIC_REQ_1)
 			if("Sorcerer Trainee")
 				backr = /obj/item/rogueweapon/woodstaff
-				H.adjust_skillrank_up_to(/datum/skill/combat/staves, SKILL_LEVEL_JOURNEYMAN, TRUE)
+				H.adjust_skillrank_up_to(/datum/skill/combat/staves, SKILL_LEVEL_APPRENTICE, TRUE)
 				H.mind.AddSpell(new /obj/effect/proc_holder/spell/invoked/projectile/arcynebolt)
 				H.mind.AddSpell(new /obj/effect/proc_holder/spell/invoked/repulse)
 				backpack_contents = list(
