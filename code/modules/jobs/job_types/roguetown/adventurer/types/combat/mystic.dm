@@ -46,6 +46,8 @@
 				H.adjust_skillrank_up_to(/datum/skill/combat/staves, SKILL_LEVEL_JOURNEYMAN, TRUE)
 				backpack_contents = list(
 					/obj/item/roguegem/amethyst = 1,
+					/obj/item/flashlight/flare/torch = 1,
+					/obj/item/recipe_book/survival = 1,
 				)
 				H.change_stat(STATKEY_LCK, 1)
 				var/datum/devotion/C = new /datum/devotion(H, H.patron)
@@ -57,6 +59,8 @@
 				H.mind.AddSpell(new /obj/effect/proc_holder/spell/invoked/fortitude)
 				backpack_contents = list(
 					/obj/item/roguegem/amethyst = 1,
+					/obj/item/flashlight/flare/torch = 1,
+					/obj/item/recipe_book/survival = 1,
 				)
 				H.mind?.adjust_spellpoints(-4)
 				H.change_stat(STATKEY_CON, 1)
@@ -69,6 +73,10 @@
 				H.adjust_skillrank_up_to(/datum/skill/combat/swords, SKILL_LEVEL_JOURNEYMAN, TRUE)
 				H.mind.AddSpell(new /obj/effect/proc_holder/spell/invoked/enchant_weapon)
 				H.mind.AddSpell(new /obj/effect/proc_holder/spell/invoked/projectile/airblade)
+				backpack_contents = list(
+					/obj/item/flashlight/flare/torch = 1,
+					/obj/item/recipe_book/survival = 1,
+				)
 				H.mind?.adjust_spellpoints(-5)
 				H.change_stat(STATKEY_STR, 1)
 				var/datum/devotion/C = new /datum/devotion(H, H.patron)
@@ -80,6 +88,8 @@
 				H.mind.AddSpell(new /obj/effect/proc_holder/spell/invoked/repulse)
 				backpack_contents = list(
 					/obj/item/roguegem/amethyst = 1,
+					/obj/item/flashlight/flare/torch = 1,
+					/obj/item/recipe_book/survival = 1,
 				)
 				H.mind?.adjust_spellpoints(-5) //so they can pick conjure companion
 				H.change_stat(STATKEY_INT, 1)
