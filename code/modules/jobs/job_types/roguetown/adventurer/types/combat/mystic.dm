@@ -67,7 +67,7 @@
 						H.grant_language(/datum/language/abyssal)
 					if(/datum/patron/divine/dendor)
 						neck = /obj/item/clothing/neck/roguetown/psicross/dendor
-						H.cmode_music = 'sound/music/cmode/garrison/combat_warden.ogg' // see: druid.dm
+						H.cmode_music = 'sound/music/cmode/garrison/combat_warden.ogg'
 					if(/datum/patron/divine/necra)
 						neck = /obj/item/clothing/neck/roguetown/psicross/necra
 						H.cmode_music = 'sound/music/cmode/church/combat_necra.ogg'
@@ -124,7 +124,7 @@
 						H.grant_language(/datum/language/abyssal)
 					if(/datum/patron/divine/dendor)
 						neck = /obj/item/clothing/neck/roguetown/psicross/dendor
-						H.cmode_music = 'sound/music/cmode/garrison/combat_warden.ogg' // see: druid.dm
+						H.cmode_music = 'sound/music/cmode/garrison/combat_warden.ogg'
 					if(/datum/patron/divine/necra)
 						neck = /obj/item/clothing/neck/roguetown/psicross/necra
 						H.cmode_music = 'sound/music/cmode/church/combat_necra.ogg'
@@ -182,7 +182,7 @@
 						H.grant_language(/datum/language/abyssal)
 					if(/datum/patron/divine/dendor)
 						neck = /obj/item/clothing/neck/roguetown/psicross/dendor
-						H.cmode_music = 'sound/music/cmode/garrison/combat_warden.ogg' // see: druid.dm
+						H.cmode_music = 'sound/music/cmode/garrison/combat_warden.ogg'
 					if(/datum/patron/divine/necra)
 						neck = /obj/item/clothing/neck/roguetown/psicross/necra
 						H.cmode_music = 'sound/music/cmode/church/combat_necra.ogg'
@@ -239,7 +239,7 @@
 						H.grant_language(/datum/language/abyssal)
 					if(/datum/patron/divine/dendor)
 						neck = /obj/item/clothing/neck/roguetown/psicross/dendor
-						H.cmode_music = 'sound/music/cmode/garrison/combat_warden.ogg' // see: druid.dm
+						H.cmode_music = 'sound/music/cmode/garrison/combat_warden.ogg'
 					if(/datum/patron/divine/necra)
 						neck = /obj/item/clothing/neck/roguetown/psicross/necra
 						H.cmode_music = 'sound/music/cmode/church/combat_necra.ogg'
