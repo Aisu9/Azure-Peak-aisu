@@ -158,7 +158,8 @@
 						H.cmode_music = 'sound/music/combat_jester.ogg'
 			if("Spellblade Trainee")
 				backr = /obj/item/rogueweapon/shield/wood
-				beltr = /obj/item/rogueweapon/sword/iron
+				beltr = /obj/item/rogueweapon/scabbard/sword
+				r_hand = /obj/item/rogueweapon/sword/iron
 				H.adjust_skillrank_up_to(/datum/skill/combat/shields, SKILL_LEVEL_NOVICE, TRUE)
 				H.adjust_skillrank_up_to(/datum/skill/combat/swords, SKILL_LEVEL_APPRENTICE, TRUE)
 				H.mind.AddSpell(new /obj/effect/proc_holder/spell/invoked/enchant_weapon)
