@@ -10,7 +10,7 @@
 	subclass_stats = list(
 			STATKEY_INT = 1,
 			STATKEY_CON = 1,
-			STATKEY_WIL = 2,
+			STATKEY_WIL = 1,
 	)
 	age_mod = /datum/class_age_mod/mystic
 	subclass_spellpoints = 6
@@ -42,14 +42,16 @@
 		var/spec_choice = input(H, "What drove me away on the fence between Faith and Arcyne", "WHO AM I?") as anything in spec
 		switch(spec_choice)
 			if("Balanced Studies")
-				backr = /obj/item/rogueweapon/woodstaff
+				r_hand = /obj/item/rogueweapon/woodstaff/quarterstaff/iron
+				l_hand = /obj/item/rogueweapon/scabbard/gwstrap
 				H.adjust_skillrank_up_to(/datum/skill/combat/staves, SKILL_LEVEL_JOURNEYMAN, TRUE)
 				backpack_contents = list(
-					/obj/item/roguegem/amethyst = 1,
 					/obj/item/flashlight/flare/torch = 1,
 					/obj/item/recipe_book/survival = 1,
 				)
-				H.change_stat(STATKEY_LCK, 1)
+				H.change_stat(STATKEY_INT, 1)
+				H.change_stat(STATKEY_CON, 1)
+				H.change_stat(STATKEY_WIL, 1)
 				var/datum/devotion/C = new /datum/devotion(H, H.patron)
 				C.grant_miracles(H, cleric_tier = CLERIC_T1, passive_gain = CLERIC_REGEN_MINOR, devotion_limit = CLERIC_REQ_1)
 				if(H.mind)
@@ -108,7 +110,8 @@
 					/obj/item/recipe_book/survival = 1,
 				)
 				H.mind?.adjust_spellpoints(-4)
-				H.change_stat(STATKEY_CON, 1)
+				H.change_stat(STATKEY_CON, 2)
+				H.change_stat(STATKEY_WIL, 1)
 				var/datum/devotion/C = new /datum/devotion(H, H.patron)
 				C.grant_miracles(H, cleric_tier = CLERIC_T1, passive_gain = CLERIC_REGEN_DEVOTEE, devotion_limit = CLERIC_REQ_1)
 				if(H.mind)
@@ -170,6 +173,7 @@
 				)
 				H.mind?.adjust_spellpoints(-5)
 				H.change_stat(STATKEY_STR, 1)
+				H.change_stat(STATKEY_PER, 1)
 				var/datum/devotion/C = new /datum/devotion(H, H.patron)
 				C.grant_miracles(H, cleric_tier = CLERIC_T1, passive_gain = CLERIC_REGEN_WITCH, devotion_limit = CLERIC_REQ_1)
 				if(H.mind)
@@ -228,7 +232,8 @@
 					/obj/item/recipe_book/survival = 1,
 				)
 				H.mind?.adjust_spellpoints(-5) //so they can pick conjure companion
-				H.change_stat(STATKEY_INT, 1)
+				H.change_stat(STATKEY_INT, 2)
+				H.change_stat(STATKEY_WIL, 1)
 				var/datum/devotion/C = new /datum/devotion(H, H.patron)
 				C.grant_miracles(H, cleric_tier = CLERIC_T1, passive_gain = CLERIC_REGEN_WITCH, devotion_limit = CLERIC_REQ_1)
 				if(H.mind)
