@@ -94,7 +94,7 @@
 
 /datum/advclass/mystic/resilientsoul
 	name = "Resilient Soul"
-	tutorial = "I have spent my youth deepening my faith, but soon followed closely on the side of a generous enchantor who tought me a few tricks to preserve and save lyves"
+	tutorial = "I have spent my youth deepening my faith, but soon followed closely on the side of a generous enchantor who taught me a few tricks to preserve and save lyves"
 	allowed_sexes = list(MALE, FEMALE)
 	allowed_races = RACES_ALL_KINDS
 	outfit = /datum/outfit/job/roguetown/adventurer/resilient
@@ -122,7 +122,7 @@
 
 /datum/outfit/job/roguetown/adventurer/resilient/pre_equip(mob/living/carbon/human/H)
 	..()
-	to_chat(H, span_warning("I have spent my youth deepening my faith, but soon followed closely on the side of a generous enchantor who tought me a few tricks to preserve and save lyves"))
+	to_chat(H, span_warning("I have spent my youth deepening my faith, but soon followed closely on the side of a generous enchantor who taught me a few tricks to preserve and save lyves"))
 	head = /obj/item/clothing/head/roguetown/roguehood/mage
 	shoes = /obj/item/clothing/shoes/roguetown/boots
 	pants = /obj/item/clothing/under/roguetown/trou/leather
