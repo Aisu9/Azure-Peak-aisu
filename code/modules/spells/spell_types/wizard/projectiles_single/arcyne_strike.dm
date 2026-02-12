@@ -56,7 +56,7 @@
 	nodamage = FALSE
 	npc_simple_damage_mult = 1.5 // Makes it more effective against NPCs.
 	hitsound = 'sound/combat/hits/bladed/smallslash (1).ogg'
-	speed = 10 // to make sure it hit the target
+	speed = 1 // to make sure it hit the target
 	var/apply_mark = TRUE
 
 /obj/projectile/energy/arcynestrike/blunt
