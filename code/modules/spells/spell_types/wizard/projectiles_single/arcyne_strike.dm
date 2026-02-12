@@ -1,7 +1,6 @@
 /obj/effect/proc_holder/spell/invoked/projectile/arcynestrike
 	name = "Arcyne Strike"
 	desc = "Imbue your held weapon with latent arcyne energy before striking your target"
-	cost = 2 // basic spellblade melee spell
 	overlay_state = "conjure_weapon"
 	range = 1
 	projectile_type = /obj/projectile/energy/arcynestrike
