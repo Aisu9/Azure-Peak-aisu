@@ -1,6 +1,6 @@
 /obj/effect/proc_holder/spell/invoked/projectile/arcynestrike
 	name = "Arcyne Strike"
-	desc = "Imbue your held weapon with latent arcyne energy before striking your target"
+	desc = "Imbue your held weapon with latent arcyne energy before striking the ignorant!"
 	overlay_state = "conjure_weapon"
 	range = 1
 	projectile_type = /obj/projectile/energy/arcynestrike
@@ -51,11 +51,11 @@
 /obj/projectile/energy/arcynestrike
 	name = "Arcyne Smite (Cut)"
 	icon_state = "air_blade_cut"
-	damage = 40 // 70 again simple mobs
+	damage = 50 // 75 again simple mobs
 	range = 1
 	woundclass = BCLASS_CUT
 	nodamage = FALSE
-	npc_simple_damage_mult = 1.75 // Makes it more effective against NPCs.
+	npc_simple_damage_mult = 1.50 // Makes it more effective against NPCs.
 	hitsound = 'sound/combat/hits/bladed/smallslash (1).ogg'
 	speed = 1 // to make sure it hit the target
 	var/apply_mark = TRUE
@@ -78,7 +78,7 @@
 	if(ismob(target))
 		var/datum/status_effect/debuff/arcanemark/mark = M.has_status_effect(/datum/status_effect/debuff/arcanemark)
 		if(mark && mark.stacks == mark.max_stacks)
-			armor_penetration = 50 //pierces most armors
+			armor_penetration = 40 //pierces most armors
 			apply_mark = FALSE
 			consume_arcane_mark_stacks(M)
 
