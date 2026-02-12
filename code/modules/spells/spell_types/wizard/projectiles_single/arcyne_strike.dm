@@ -16,7 +16,8 @@
 	chargedloop = /datum/looping_sound/invokegen
 	associated_skill = /datum/skill/magic/arcane
 	spell_tier = 2 // offensive magic
-	invocation_type = "none"
+	invocations = list("Magicae Arma!")
+	invocation_type = "shout"
 	glow_color = GLOW_COLOR_ARCANE
 	glow_intensity = GLOW_INTENSITY_LOW
 	gesture_required = TRUE
