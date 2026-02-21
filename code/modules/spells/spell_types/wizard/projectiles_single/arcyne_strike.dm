@@ -6,9 +6,9 @@
 	projectile_type = /obj/projectile/energy/arcynestrike
 	releasedrain = 20
 	chargedrain = 0
-	chargetime = 0.6 SECONDS
+	chargetime = 0.4 SECONDS
 	charging_slowdown = 2
-	recharge_time = 5 SECONDS
+	recharge_time = 6 SECONDS
 	warnie = "spellwarning"
 	no_early_release = TRUE
 	movement_interrupt = FALSE
@@ -51,6 +51,7 @@
 /obj/projectile/energy/arcynestrike
 	name = "Arcyne Smite (Cut)"
 	icon_state = "air_blade_cut"
+	guard_deflectable = TRUE
 	damage = 50 // 75 again simple mobs
 	range = 1
 	woundclass = BCLASS_CUT
