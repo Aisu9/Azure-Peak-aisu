@@ -89,4 +89,8 @@
 			visible_message(span_warning("[src] fizzles on contact with [target]!"))
 			playsound(get_turf(target), 'sound/magic/magic_nulled.ogg', 100)
 			qdel(src)
+			continue
+		if(spell_guard_check(L, TRUE))
+			L.visible_message(span_warning("[src] deflect my strike!"))
+			qdel(src)
 			return BULLET_ACT_BLOCK
